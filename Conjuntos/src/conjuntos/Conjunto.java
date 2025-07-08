@@ -67,7 +67,7 @@ public class Conjunto<T> {
     }
     
     
-    public static <T> Conjunto<T> diferenciaAsimetrica(Conjunto<T> a, Conjunto<T> b) {
+    public static <T> Conjunto<T> diferenciaSimetrica(Conjunto<T> a, Conjunto<T> b) {
         Conjunto<T> unionAB = union(a, b);
         Conjunto<T> interseccionAB = interseccion(a, b);
         return diferencia(unionAB, interseccionAB);
