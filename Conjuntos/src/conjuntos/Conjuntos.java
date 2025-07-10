@@ -25,7 +25,8 @@ public class Conjuntos {
         Conjunto<String> union = Conjunto.union(conjunto1, conjunto2);
         Conjunto<String> diferenciaSimetrica = Conjunto.diferenciaSimetrica(conjunto1, conjunto2);
         Conjunto<String> interseccion = Conjunto.interseccion(conjunto1, conjunto2);
-        Conjunto<String> diferencia = Conjunto.interseccion(conjunto1, conjunto2);
+        Conjunto<String> diferenciaAB = Conjunto.diferencia(conjunto1, conjunto2);
+        Conjunto<String> diferenciaBA = Conjunto.diferencia(conjunto2, conjunto1);
         
         System.out.print("Conjunto 1: ");
         conjunto1.imprimir();
@@ -40,7 +41,10 @@ public class Conjuntos {
         interseccion.imprimir();
         
         System.out.print("Diferencia A - B: ");
-        diferencia.imprimir();
+        diferenciaAB.imprimir();
+        
+        System.out.print("Diferencia B - A: ");
+        diferenciaBA.imprimir();
         
         System.out.print("Diferencia simetrica A △ B: ");
         diferenciaSimetrica.imprimir();
